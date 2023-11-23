@@ -10,7 +10,7 @@ public class App {
         System.out.println("Input the year");
         int year = scanner.nextInt();
 
-        System.out.printf("%s %d had %d days", App.MONTHS[month], year, daysInMonth(month, year));
+        System.out.printf("%s %d had %d days", App.MONTHS[month-1], year, daysInMonth(month, year));
         scanner.close();
     }
     // index into this array to get month names
